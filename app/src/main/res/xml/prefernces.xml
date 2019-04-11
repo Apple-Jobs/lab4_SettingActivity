@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <PreferenceCategory
+        android:title="@string/pref_inline"
+        android:key="pref_key_inline_settings"
+        >
+        <CheckBoxPreference
+            android:key="pref_checkbox"
+            android:title="@string/pref_checkbox"
+            android:summary="@string/pref_checkbox_summ"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_dialog"
+        android:key="pref_key_dialog">
+        <EditTextPreference
+            android:key="pref_edittext"
+            android:title="@string/pref_edittext"
+            android:summary="@string/pref_edittext_summ"
+            android:dialogTitle="Enter your favorite animal"
+            />
+        <ListPreference
+            android:title="@string/pref_list"
+            android:summary="@string/pref_list_summ"
+            android:dialogTitle="Choose one"
+            android:entries="@array/pref_list_values"
+            android:entryValues="@array/pref_list_values"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_launch"
+        android:key="pref_key_launch">
+        <PreferenceScreen
+            android:title="@string/pref_screen"
+            android:summary="@string/pref_screen_summ">
+            <CheckBoxPreference
+                android:title="@string/toggle"
+                android:summary="@string/toggle_summ"
+                android:key="@string/toggle_key"/>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="@string/pref_intent"
+            android:summary="@string/pref_intent_summ">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/Apple-Jobs"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_attribute"
+        android:key="pref_key_attribute">
+        <CheckBoxPreference
+            android:title="@string/pref_parent_checkbox"
+            android:summary="@string/pref_parent_checkbox_summ"
+            android:key="pref_parent_value"/>
+        <CheckBoxPreference
+            android:dependency="pref_parent_value"
+            android:title="@string/pref_child_checkbox"
+            android:summary="@string/pref_child_checkbox_summ"/>
+    </PreferenceCategory>
+</PreferenceScreen>

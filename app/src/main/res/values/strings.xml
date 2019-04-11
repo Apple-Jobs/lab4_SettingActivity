@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FragmentPreference</string>
+    <string name="pref_inline">In-line preferences</string>
+    <string name="pref_checkbox">Checkbox preference</string>
+    <string name="pref_checkbox_summ">This is a checkbox</string>>
+    <string name="pref_dialog">Diaglog-based preference</string>
+    <string name="pref_edittext">Edit text preference</string>
+    <string name="pref_edittext_summ">An example that uses an edit text dialog</string>
+    <string name="pref_list">List preference</string>
+    <string name="pref_list_summ">An example that uses a list dialog</string>
+    <string name="pref_launch">Launch preferences</string>
+    <string name="pref_screen">Screen preference</string>
+    <string name="pref_screen_summ">Show another screen of preferences</string>
+    <string name="pref_intent">Intent preference</string>
+    <string name="pref_intent_summ">Launches an Activity from an Intent</string>
+    <string name="pref_attribute">Preference attributes</string>
+    <string name="pref_parent_checkbox">Parent checkbox preference</string>
+    <string name="pref_parent_checkbox_summ">This is visually a parent</string>
+    <string name="pref_child_checkbox">Child checkbox preference</string>
+    <string name="pref_child_checkbox_summ">This is visually a child</string>
+    <string name="toggle">Toggle preference</string>
+    <string name="toggle_summ">Preference that is on the next screen but same hierarchy</string>
+    <string name="toggle_key">next_scrren_checkbox_preference</string>
+</resources>
